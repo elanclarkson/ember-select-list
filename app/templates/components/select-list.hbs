@@ -5,7 +5,7 @@
 {{/if}}
 
 {{#each content key="@identity" as |item|}}
-  <option value="{{read-path item optionValuePath}}" selected={{is-equal-by-path item value optionValuePath}}>
-    {{read-path item optionLabelPath}}
+  <option value="{{get item optionValuePath}}" selected={{is-equal-by-path item value optionValuePath}}>
+    {{get item optionLabelPath}}
   </option>
 {{/each}}
